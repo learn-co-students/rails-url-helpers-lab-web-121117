@@ -6,12 +6,12 @@ class StudentsController < ApplicationController
   end
 
   def show
-    self.set_student
-  
+    set_student
+
   end
 
   def edit
-    self.set_student
+    set_student
   end
   def activate
     @student = Student.find(params[:id])
