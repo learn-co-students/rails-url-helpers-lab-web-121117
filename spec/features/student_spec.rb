@@ -24,6 +24,7 @@ describe 'Show page' do
   end
 
   it 'renders properly' do
+    # byebug
     visit student_path(@student)
     expect(page.status_code).to eq(200)
   end
