@@ -1,0 +1,2 @@
+This is the activate page for <%= @student.to_s %>
+<%= button_to "Activate", activate_student_path(@student, status: true), :method => "patch" %>
