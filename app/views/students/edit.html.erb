@@ -2,7 +2,7 @@
 
 <%= form_for @student do |s| %>
 <div>
-    <%= s.check_box :active %> <%= !@student.active %> <br />
+    <%= s.check_box :active %> Active<br />
     <input type="submit" value="Edit Student Status">
 </div>
 <% end %>

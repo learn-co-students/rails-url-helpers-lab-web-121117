@@ -9,15 +9,12 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
-  def edit
+  def activate
     @student = Student.find(params[:id])
-  end
-
-  def update
-    @student = Student.find(params[:id])
-    @student.update(active: params[:student][:active])
+    @student.toggle(:active).save
     redirect_to @student
   end
+
 
 
   private
