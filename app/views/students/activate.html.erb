@@ -1,0 +1,14 @@
+
+
+<form action="activate_student_path" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <p>"<%= @student.to_s %>'s Status"</p>
+  <p>active</p>
+  <div>
+    <input type="radio" label="true" name="student[active]" value="true">
+    <input type="radio" label="false" name="student[active]" value="false">
+
+  </div>
+
+  <input type="submit" value="submit" />
+</form>
