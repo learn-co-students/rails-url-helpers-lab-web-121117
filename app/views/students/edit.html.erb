@@ -1,0 +1,8 @@
+<h2>Change <%= @student.first_name %>'s active status from <%= @student.active %> by clicking below:</h2>
+
+<%= form_for @student do |s| %>
+<div>
+    <%= s.check_box :active %> Active<br />
+    <input type="submit" value="Edit Student Status">
+</div>
+<% end %>
